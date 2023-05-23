@@ -1,0 +1,80 @@
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0.3em 1.5em;
+}
+.logo{
+     cursor: pointer;
+}
+.menuBar{
+    font-size: 5rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+.menuBarClose{
+    font-size: 5rem;
+    cursor: pointer;
+}
+.links{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+  background: rgb(240, 239, 239);
+  z-index: 100;
+ 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.navLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.linksHide{
+    display: none;
+}
+.link{
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+    font-family: 'Poppins' sans-serif;
+}
+@media screen and (min-width:770px) {
+    .menuBar {
+        display:none; 
+    }
+    .menuBarClose{
+        display:none;
+    }
+    .navLinks{
+        display: flex;
+        gap:3em;
+        flex-direction: row;
+        position: static;
+        background: transparent;
+        top: 0px;
+        height: auto;
+    }
+    .linksHide{
+        display: block;
+    }
+    
+}
+@media screen and (min-width:1080px) {
+    .navBar{
+        margin: 0.8em 4em;
+    }
+.links{
+   
+    margin-right: 4rem;
+}
+
+
+}

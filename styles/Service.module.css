@@ -1,0 +1,187 @@
+/*
+=============== 
+Hero
+===============
+*/
+.heroSection {
+  height: 50vh;
+  background: url("/services.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+
+  position: relative;
+}
+
+.heroContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.8);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.heroHeader {
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (min-width: 770px) {
+  .heroSection {
+    height: 70vh;
+  }
+  .heroTitle {
+    font-size: 5rem;
+  }
+
+  .innerHeroContainer {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .heroSection {
+    height: 75vh;
+  }
+  .heroTitle {
+    font-size: 7rem;
+  }
+}
+
+/*
+=============== 
+Specialities
+===============
+*/
+.specialitiesSection {
+  padding: 2em;
+  margin: 3em 0em;
+}
+
+.specialitiesHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.specialitiesHeader h3 {
+  color: var(--color-primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.specialitiesHeader h2 {
+  letter-spacing: 2px;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+}
+.specialitiesHeader p {
+  text-align: center;
+}
+.specialitiesList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0em;
+}
+.specialitiesList h3 {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.specialitiesList li {
+  text-transform: capitalize;
+}
+.specialitiesList span {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/*
+=============== 
+Services
+===============
+*/
+
+.servicesSection {
+  background: var(--color-primary);
+  color: #ebe2e2;
+  padding: 3em 1em;
+}
+
+.servicesHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicesHeader h3 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.servicesHeader h2 {
+  letter-spacing: 2px;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+}
+.servicesContainer {
+  display: grid;
+  place-items: center;
+  gap: 1em;
+}
+.servicesCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  max-width: 80%;
+  border: 1px solid rgb(209, 207, 207);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.servicesCard h3 {
+  font-size: 1.8em;
+  text-align: center;
+  text-transform: capitalize;
+}
+.servicesCard p {
+  text-align: center;
+  font-size: 0.8em;
+}
+.servicesCard:hover {
+  background: rgba( 2, 88, 252, 0.05 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+@media screen and (min-width: 770px) {
+  .servicesContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .servicesContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
